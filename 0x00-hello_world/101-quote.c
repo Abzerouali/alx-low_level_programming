@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *Standard input/output operations library for C programming language
+ *input/output operations library for C programming language
  */
 #include <unistd.h>
 
