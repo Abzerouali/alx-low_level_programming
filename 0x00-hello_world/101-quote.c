@@ -1,12 +1,9 @@
 #include <stdio.h>
-/**
- *input/output operations library for C programming language
- */
 #include <unistd.h>
 /**
  * main - Entry point of the program
  * Description: main
- * Return: Always 1 
+ * Return: Always 1
  */
 int main(void)
 {
