@@ -5,7 +5,6 @@
 #include <unistd.h>
 /**
  * main - Entry point of the program
- *
  * Description: main
  * Return: Always 1 
  */
