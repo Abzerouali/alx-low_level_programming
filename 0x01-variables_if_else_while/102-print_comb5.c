@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Descripption :prints all possible combinations of two two-digit numbers
+ * Descripption :prints all possible combinations of two two-digit numbers.
  *Return: 0
  */
 
