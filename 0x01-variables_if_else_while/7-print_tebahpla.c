@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Description: the lowercase alphabet in reverse
+ * Description: the lowercase alphabet in reverse.
  * Return: 0
  */
 
