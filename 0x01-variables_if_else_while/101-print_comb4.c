@@ -8,21 +8,21 @@ int main(void)
 {
 	int x, y, z;
 
-	for (x = 0; x < 10; x++)
+	for (x = 48; x <= 57; x++)
 	{
-		for (y = i + 1; y < 10; y++)
+		for (y = x + 1; y <= 57; y++)
 		{
-			for (z = y + 1; z < 10; z++)
+			for (z = y + 1; z <= 57; z++)
 			{
-				putchar(x + 48);
-				putchar(y + 48);
-				putchar(z + 48);
-					if (x != 7 || y != 8 || z != 9)
+				putchar(x);
+				putchar(y);
+				putchar(z);
+					if (!(x == 55 && y == 56 && z == 57))
 					{
-					putchar(',');
-					putchar(' ');
+						putchar(',');
+						putchar(' ');
 					}
-			}
+																						}
 		}
 	}
 	putchar('\n');
