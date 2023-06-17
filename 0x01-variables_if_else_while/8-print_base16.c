@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-		int N, A;
+		char N;
 
-		while (N = 0; N <= 9)
+		for (N = 48; N <= 57; N++)
 		{
-			putchar(N);
-			N++;
+		putchar(N);
 		}
-		while (A = a ; A < 'g')
+
+		for (N = 97; N <= 102; N++)
 		{
-			putchar(A);
-			A++;
+		putchar(N);
 		}
+
 		putchar('\n');
 		return (0);
 }
