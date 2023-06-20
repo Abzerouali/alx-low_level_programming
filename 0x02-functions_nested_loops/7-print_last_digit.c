@@ -9,9 +9,9 @@
 
 int print_last_digit(int l)
 {
-	if (l < 0)
+	if (l == INT_MIN)
 	{
-		l = l* -1;
+		l = -(INT_MIN % 10);
 	}
 	if (l <= 9)
 	{
