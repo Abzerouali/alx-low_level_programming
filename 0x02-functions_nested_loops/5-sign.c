@@ -5,7 +5,7 @@
  * @n: int type
  *
  * Determines the sign of an integer.
- * Returns:1 or -1 or 0 
+ * returns:1 or -1 or 0
  */
 
 int print_sign(int n)
