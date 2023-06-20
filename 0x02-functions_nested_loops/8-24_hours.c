@@ -4,7 +4,7 @@
  *jack_bauer - a function that prints every minute starting from 00:00 to 23:59
  */
 
-void jack_bauer(void);
+void jack_bauer(void)
 {
 	int a, b, c, d;
 
