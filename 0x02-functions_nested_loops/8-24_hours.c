@@ -25,7 +25,7 @@ void jack_bauer(void)
 			}
 		}
 	}
-	for (;a = 2;)
+	for (a = 2;)
 	{
 		for (b = 0; b < 4; b++)
 		{
