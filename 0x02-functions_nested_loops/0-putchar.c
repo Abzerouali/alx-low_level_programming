@@ -6,7 +6,7 @@
  * @c: The character to print
  * Return: 0
  */
-int _putchar(char c)
+int _putchar(void)
 {
 	_putchar('_');
 	_putchar('p');
