@@ -13,11 +13,11 @@ int main(void)
 	while (Y < 1024)
 	{
 		if (Y % 3 == 0)
-			T += Y;
+			S += Y;
 		else if (Y % 5 == 0)
-			T += Y;
+			S += Y;
 		Y++;
 	}
-	printf("%d\n", T);
+	printf("%d\n", S);
 	return (0);
 }
