@@ -15,7 +15,7 @@ int main(void)
 		R = b;
 		b += a;
 		a = R;
-	} while (b < 4000000)
+	} while (b < 4000000);
 	printf("%d\n", S);
 	return (0);
 }
