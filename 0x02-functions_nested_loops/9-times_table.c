@@ -29,16 +29,16 @@ void times_table(void)
 				{
 					_putchar(c + '0');
 					_putchar(',');
-					if (b != 1)
+				}
+				if (b != 1)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(c + '0');
+					if (b < 9)
 					{
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(c + '0');
-						if (b < 9)
-						{
-							_putchar(',');
-						}
-					}
+						_putchar(',');
+					}	
 				}
 			}
 			else
