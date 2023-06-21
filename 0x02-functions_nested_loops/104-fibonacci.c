@@ -20,7 +20,7 @@ int main(void)
 	printf("%lu, %lu, ", b1, b2);
 	for (R = 2; R < 98; R++)
 	{
-		if (!(b1 + b2 < LARGEST && a2 < 0 && a1 < 0))
+		if (!(b1 - b2 < LARGEST && a2 < 0 && a1 < 0))
 		{
 			t1 = (b1 + b2) / LARGEST;
 			t2 = (b1 + b2) % LARGEST;
