@@ -11,13 +11,14 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		n = -n
+		r = -n;
 		_putchar('-');
 		print_number(n);
 	}
 	else if (n <= 9)
 	{
-		_putchar(n + '0');
+		r = n;
+		_putchar(r + '0');
 	}
 
 	else
