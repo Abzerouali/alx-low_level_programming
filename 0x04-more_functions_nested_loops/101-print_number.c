@@ -18,7 +18,6 @@ void print_number(int n)
 	else if (n <= 9)
 	{
 		r = n;
-		_putchar(r + '0');
 	}
 
 	else
