@@ -1,6 +1,7 @@
 #include "main.h"
 /**
 * print_most_numbers - a function that prints the numbers, from 0 to 9
+* except 2 and 4
 * Return: nothing
 */
 
@@ -14,8 +15,8 @@ void print_most_numbers(void)
 		{
 			continue;
 		}
-			_putchar(a + '0');
-			a++;
-		}
+		_putchar(a + '0');
+		a++;
+	}
 	_putchar('\n');
 }
