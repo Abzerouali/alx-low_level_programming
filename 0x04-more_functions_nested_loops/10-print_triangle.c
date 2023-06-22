@@ -26,9 +26,9 @@ void print_triangle(int size)
 					_putchar('#');
 				}
 				b++;
-			} while(b < size)
+			} while (b < size);
 			_putchar('\n');
 			a++;
-		} while(a < size);
+		} while (a < size);
 	}
 }
