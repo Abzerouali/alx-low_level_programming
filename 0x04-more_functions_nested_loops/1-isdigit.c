@@ -3,8 +3,8 @@
 /**
  * * _isdigit - a function that checks for a digit (0 through 9)
  * * @c: int
- * * Return:  1 or 0 
- * */
+ * Return: 1 or 0
+ */
 
 int _isdigit(int c)
 {
