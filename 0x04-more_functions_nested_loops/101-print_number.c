@@ -15,7 +15,6 @@ void print_number(int n)
 	else if (n <= 9)
 	{
 		_putchar(n + '0');
-		print_number(n);
 	}
 
 	else
