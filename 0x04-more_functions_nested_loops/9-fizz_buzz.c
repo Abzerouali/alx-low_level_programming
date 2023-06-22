@@ -11,7 +11,6 @@ int main(void)
 	int a = 1;
 
 	do {
-		a++;
 			if (a % 3 == 0 && a % 5 == 0)
 			{
 				printf("FizzBuzz");
@@ -31,6 +30,7 @@ int main(void)
 			}
 		if (a != 100)
 			printf(" ");
+		a++;
 	} while (a <= 100);
 	printf("\n");
 	return (0);
