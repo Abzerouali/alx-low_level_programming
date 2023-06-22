@@ -19,10 +19,11 @@ void print_number(int n)
 	{
 		r = n;
 	}
-
 	else
 	{
-		print_number(n / 10);
-		print_number(n % 10);
+		r = n;
+		print_number(r / 10);
+		print_number(r % 10);
 	}
+	_putchar(r);
 }
