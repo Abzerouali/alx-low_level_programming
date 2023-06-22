@@ -13,7 +13,7 @@ void print_number(int n)
 	{
 		r = -n;
 		_putchar('-');
-		print_number(n);
+		print_number(r);
 	}
 	else if (n <= 9)
 	{
