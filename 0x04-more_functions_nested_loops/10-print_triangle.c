@@ -14,8 +14,10 @@ void print_triangle(int size)
 	{
 		_putchar('\n');
 	}
-	do {
-		do {
+	while (a < size)
+       	{
+		while (b < size)
+	       	{
 			if (b < size - a - 1)
 			{
 				_putchar(' ');
@@ -25,9 +27,9 @@ void print_triangle(int size)
 				_putchar('#');
 			}
 			b++;
-		} while (b < size);
+		}
 		_putchar('\n');
 		a++;
-	} while (a < size);
+	}
 }
 
