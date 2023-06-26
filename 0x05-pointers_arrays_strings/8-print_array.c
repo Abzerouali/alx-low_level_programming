@@ -12,18 +12,20 @@
 void print_array(int *a, int n)
 {
 	int o;
-	o = 0;
 
+	o = 0;
 	while (o < n)
 	{
 		if (o == 0)
 		{
 			printf("%d", *(a + o));
-			i++;
+			o++;
 		}
 		else
+		{
 			printf(", %d", a[o]);
 			o++;
+		}
 	}
 	printf("\n");
 }
