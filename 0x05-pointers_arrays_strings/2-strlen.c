@@ -13,6 +13,6 @@ int _strlen(char *s)
 
 	for (a = 0; s[a]; a++)
 	{
-	return (a);
 	}
+	return (a);
 }
