@@ -9,24 +9,21 @@
 
 int _atoi(char *s)
 {
-	unsigned int n;
-	int a;
+	unsigned int n = 0;
+	int a = 1;
 
-	n = 0;
-	a = 1;
-	while (*s++)
-	{
+	do {
 		if (*s == '-')
 		{
 			a *= -1;
 		}
 		else if (*s >= '0' && *s <= '9')
 		{
-			n = (n * 10) + (*s + '0');
+			n = (n * 10) + (*s - '0');
 		}
 		else if (n > 0)
 			continue;
-	}
+	} while (*s++);
 
 	return (n * a);
 }
