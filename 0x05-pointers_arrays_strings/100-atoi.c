@@ -22,7 +22,7 @@ int _atoi(char *s)
 			n = (n * 10) + (*s - '0');
 		}
 		else if (n > 0)
-			continue;
+			break;
 	} while (*s++);
 
 	return (n * a);
