@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _strncpy - prototype
+* _strncpy - prototype
 *  Description: a string function that copies
 *  a specified number of characters from one string to another
 *  @src:character
+*  @dest: character
 *  @n:integer
 *  Return: (dest)
 */
