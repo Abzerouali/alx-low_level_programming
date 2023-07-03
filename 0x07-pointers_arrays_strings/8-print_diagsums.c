@@ -10,13 +10,13 @@
 
 void print_diagsums(int *a, int size)
 {
-        int m = 0, s1 = 0, s2 = 0;
+	int m = 0, s1 = 0, s2 = 0;
 
-        while (m < size)
-        {
-                s1 += *(a + m * size + m);
-                s2 += *(a + m * size + size - 1 - m);
-                m++;
-        }
-        printf("%d, %d\n", s1, s2);
+	while (m < size)
+	{
+		s1 += *(a + m * size + m);
+		s2 += *(a + m * size + size - 1 - m);
+		m++;
+	}
+printf("%d, %d\n", s1, s2);
 }
