@@ -4,7 +4,7 @@
 * _strspn - Prototype
 * Description : a function gets the length of a prefix substring
 * @s: string
-* @accept: string containing the list of charchters to match in s
+* @accept: string contain charchters to match in s
 * Return: c
 */
 
