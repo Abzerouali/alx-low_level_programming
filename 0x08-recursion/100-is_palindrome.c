@@ -14,19 +14,20 @@ int _str_recursion(char *s)
 		return (0);
 
 /**
- * check_palindrome - checker
+ * _check_palindrome - checker
  *@s : pointer
  *@a : integer
  *@b : integer
  * Return: intger
  */
-int check_palindrome(char *s, int a, int b)
+
+int _check_palindrome(char *s, int a, int b)
 {
 
 	if (a >= b)
 		return (1);
 	else if (s[a] == s[b])
-		return (check_palindrome(s, a + 1, b - 1));
+		return (_check_palindrome(s, a + 1, b - 1));
 	return (0);
 }
 
@@ -43,5 +44,5 @@ int is_palindrome(char *s)
 	i = 0;
 	len = _str_recursion(s);
 
-	return (check_palindrome(s, i, len - 1));
+	return (_check_palindrome(s, i, len - 1));
 }
