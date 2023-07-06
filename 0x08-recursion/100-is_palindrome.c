@@ -12,7 +12,7 @@ int _str_recursion(char *s)
 		return (1 + _str_recursion(s + 1));
 	else
 		return (0);
-
+}
 /**
  * _check_palindrome - checker
  *@s : pointer
