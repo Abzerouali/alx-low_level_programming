@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 /**
+ *
  * str_len - Prototype
  * Description: a function calculate the length of a string
  * @s: string
