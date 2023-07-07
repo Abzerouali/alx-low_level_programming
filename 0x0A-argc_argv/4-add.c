@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 /**
+ *
  * main - Enrty point
  * Description: a function that adds positive numbers.
  * @argc: argument count
