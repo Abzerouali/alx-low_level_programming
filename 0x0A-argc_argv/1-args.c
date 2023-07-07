@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 /**
+ *
  * main - Entry point
  *@argc: parameter represent number of arg
  *@argv: parameter represent arr of arg
