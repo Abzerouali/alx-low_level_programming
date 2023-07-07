@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 /**
+ *
  * main - Entry point
  * Description: a function that print the number of arg
  *@argc: parameter represent number of arg
