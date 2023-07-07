@@ -2,6 +2,7 @@
 #include "main.h"
 
 /**
+ *
  * main - Entry point
  * Description: prints the program name
  * @argc: parameter represent number of arg
