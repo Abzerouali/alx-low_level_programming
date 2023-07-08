@@ -12,7 +12,7 @@
 
 int main(int argc, char **argv)
 {
-int x, y, sum;
+int x, y, sum = 0;
 
 if (argc == 1)
 {
