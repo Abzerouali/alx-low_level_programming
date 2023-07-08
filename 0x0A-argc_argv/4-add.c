@@ -2,13 +2,12 @@
 #include <stdlib.h>
 
 /**
- *
- * main - Enrty point
- * Description: a function that adds positive numbers.
- * @argc: argument count
- * @argv: argument vector
- * Return: 0
- */
+*main - Enrty point
+*Description: a function that adds positive numbers.
+*@argc: argument count
+*@argv: argument vector
+*Return: 0
+*/
 int main(int argc, char **argv)
 {
 	int x, y, sum;
