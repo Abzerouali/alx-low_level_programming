@@ -1,14 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
-
 /**
 *main - program that multiplies two numbers.
 *@argc: parameter represent number of arg
 *@argv: parameter represent arr of arg
 *Return: 0
 */
-
 int main(int argc, char *argv[])
 {
 
