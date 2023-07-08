@@ -72,7 +72,10 @@ int _atoi(char *s)
 
 int main(int argc, char *argv[])
 {
-	int x, y = 0, h = 0, arr[] = {25, 10, 5, 2, 1};
+	int x;
+	int y = 0;
+	int h = 0;
+	int arr[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
