@@ -31,7 +31,7 @@ for (x = 1; x < argc; x++)
 			return (1);
 		}
 	}
-	sum += atoi(argv[x]);
+	sum += _atoi(argv[x]);
 }
 printf("%d\n", sum);
 return (0);
