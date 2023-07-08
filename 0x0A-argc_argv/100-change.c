@@ -1,81 +1,18 @@
-#include "main.h"
 #include <stdio.h>
-
-/**
- * str_len - Prototype
- * Description: a function calculate the length of a string
- * @s: string
- * Return: len
- */
-
-int str_len(char *s)
-{
-	int len;
-
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
-}
-
-/**
- * _atoi - Prototype function
- * Description: a function thatconverts a string to integer
- * @s: string to convert
- * Return: converted string
- */
-
-int _atoi(char *s)
-{
-	int con = 0;
-	int x = 1;
-	int y = 0;
-	int z = str_len(s);
-
-	while (s[y] < '0' || s[y] > '9')
-	{
-		if (s[y] == '-')
-			x *= -1;
-		y++;
-	}
-	if (z > y)
-	{
-		if (x == -1)
-		{
-			while (s[y] >= '0' && s[y] <= '9')
-			{
-				con *= 10;
-				con -= s[y] - 48;
-				y++;
-			}
-		}
-		else
-		{
-			while (s[y] >= '0' && s[y] <= '9')
-			{
-				con *= 10;
-				con += s[y] - 48;
-				y++;
-			}
-		}
-	}
-	return (con);
-}
+#include <stdlib.h>
 
 /**
  * main - Entry point
- * Description: a function that prints the number of arguments.
- * @argc: arg count
- * @argv: arg v
- * Return: 0
+ * Description: minimum number of coins to make change for an amount of money.
+ * @argc: arg to count
+ * @argv: array
+ * Return: pair 0 or 1
  */
 
 int main(int argc, char *argv[])
 {
-	int x;
-	int y = 0;
-	int h = 0;
-	int arr[] = {25, 10, 5, 2, 1};
+	int N, x = 0, count = 0;
+	int coin[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -83,21 +20,22 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	if (_atoi(argv[1]) < 0)
+	if (atoi(argv[1]) < 0)
 		printf("0\n");
 	else
 	{
-		x = _atoi(argv[1]);
-		while (x > 0)
+		N = atoi(argv[1]);
+
+		while (N > 0)
 		{
-			while (x >= arr[y])
+			while (coin[x] <= N)
 			{
-				x -= arr[y];
-				h++;
+				N -= coin[x];
+				count++;
 			}
-			y++;
+			x++;
 		}
-		printf("%d\n", h);
+		printf("%d\n", count);
 	}
 	return (0);
 }
