@@ -24,14 +24,13 @@ for (x = 1; x < argc; x++)
 {
 	for (y = 0; argv[x][y] != '\0'; y++)
 	{
-		if (!((argv[x][y] >= '0' && argv[x][y]
-		< '9') || argv[x][y] == '-'))
+		if (!((argv[x][y] >= '0' && argv[x][y] < '9') || argv[x][y] == '-'))
 		{
 			printf("Error\n");
 			return (1);
 		}
 	}
-	sum += _atoi(argv[x]);
+	sum += atoi(argv[x]);
 }
 printf("%d\n", sum);
 return (0);
