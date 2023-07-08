@@ -11,6 +11,7 @@
 
 int main(int argc, char *argv[])
 {
+
 	int f, s;
 	int mult;
 
@@ -19,9 +20,12 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	f = atoi(argv[1]);
-	s = atoi(argv[2]);
-	mult = f * s;
+	else
+	{
+		f = atoi(argv[1]);
+		s = atoi(argv[2]);
+		mult = f * s;
+	}
 	printf("%d\n", mult);
 	return (0);
 }
