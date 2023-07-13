@@ -9,6 +9,7 @@
 *@new_size: New size of the memory block.
 *Return: Pointer to the reallocated memory block.
 */
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *new_ptr;
