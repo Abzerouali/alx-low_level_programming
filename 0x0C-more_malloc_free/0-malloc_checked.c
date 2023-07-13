@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-*malloc_checked - checker
+*malloc_checked - checker.
 *@b: var
 *Return: pointer
 */
