@@ -33,7 +33,9 @@ int _strlen(char *str)
 	}
 	return (i);
 }
-/**errors - Handles errors for the main function.*/
+/**
+ * errors - Handles errors for the main function.
+ */
 void errors(void)
 {
 	printf("Error\n");
