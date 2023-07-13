@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
-*string_nconcat -Concatenates two strings, up to n characters from the second string
+*string_nconcat -Concatenates two strings,
+*up to n characters from the second string
 *@str1: Pointer to the first string
 *@str2: Pointer to the second string
 *@n: Number of characters to concatenate from the second string
