@@ -11,9 +11,11 @@ int is_digit(char *str)
 	int i = 0;
 
 	while (str[i])
+	{
 		if (str[i] < '0' || str[i] > '9')
 			return (0);
 		i++;
+	}
 	return (1);
 }
 /**
@@ -26,7 +28,9 @@ int _strlen(char *str)
 	int i = 0;
 
 	while (str[i] != '\0')
+	{
 		i++;
+	}
 	return (i);
 }
 /**errors - Handles errors for the main function.*/
@@ -58,8 +62,10 @@ int main(int argc, char *argv[])
 		return (1);
 	i = 0;
 	while (i <= len1 + len2)
+	{
 		result[i] = 0;
 		i++;
+	}
 	len1 = len1 - 1;
 	while (len1 >= 0)
 	{
@@ -67,11 +73,13 @@ int main(int argc, char *argv[])
 		carry = 0;
 		len2 = _strlen(str2) - 1;
 		while (len2 >= 0)
+		{
 			digit2 = str2[len2] - '0';
 			carry += result[len1 + len2 + 1] + (digit1 * digit2);
 			result[len1 + len2 + 1] = carry % 10;
 			carry /= 10;
 			len2--;
+		}
 		if (carry > 0)
 			result[len1 + len2 + 1] += carry;
 		len1--;
