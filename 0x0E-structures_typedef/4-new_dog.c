@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-*new_dog - Creates a new dog with the given name, age, and owner.
-*@name: Pointer to the name of the dog.
-*@age: Age of the dog.
-*@owner: Pointer to the owner of the dog.
-*Return: Pointer to the newly created dog.
+* new_dog - Creates a new dog with the given name, age, and owner.
+* @name: Pointer to the name of the dog.
+* @age: Age of the dog.
+* @owner: Pointer to the owner of the dog.
+* Return: Pointer to the newly created dog.
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
