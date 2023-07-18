@@ -4,7 +4,6 @@
 /**
 *print_dog - Prints the details of a dog.
 *@d: Pointer to the dog structure.
-*Return: void.
 */
 void print_dog(struct dog *d)
 {
