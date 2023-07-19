@@ -19,22 +19,19 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(1);
 	}
-
 	num = atoi(argv[1]);
-
 	if (num <= 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-
 	ptr = (char *)main;
-
-	for (index = 0; index < num && (void *)(ptr + index) != NULL; index++)
+	index = 0;
+	for (index < num && (void *)(ptr + index) != NULL)
 	{
 		printf("%02x ", ptr[index] & 0xff);
+		i++;
 	}
-
 	printf("\n");
 	return (0);
 }
