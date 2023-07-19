@@ -1,17 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
-* main - Displays the hexadecimal representation of main's code.
-* @argc: Number of command-line arguments.
-* @argv: Array of pointers to command-line arguments.
+* main - Entry point of the program.
+* @argc: The number of command-line arguments.
+* @argv: An array of pointers to command-line arguments.
 * Return: Always 0.
 */
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int num;
-	char *ptr;
+	int (*main_ptr)() = &main;
 	int index;
 
 	if (argc != 2)
@@ -19,20 +17,20 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(1);
 	}
+
 	num = atoi(argv[1]);
-	if (num <= 0)
+
+	if (num < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	ptr = (char *)main;
-	index = 0;
-	while (index < num && (void *)(ptr + index) != NULL)
+	for (index = 0; index < num; index++)
 	{
-		printf("%02x ", ptr[index] & 0xff);
-		i++;
+		printf("%.2x", *((unsigned char *)main_ptr + index));
+		if (index + 1 < num)
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
 }
-
