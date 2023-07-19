@@ -11,8 +11,8 @@ int main(int argc, char *argv[])
 {
 	int num1;
 	int num2;
-	char *operator;
-	int (*operation)(int, int);
+	char *op;
+	int (*func)(int, int);
 
 	if (argc != 4)
 	{
@@ -22,23 +22,23 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	operator = argv[2];
+	op = argv[2];
 
-	if (num2 == 0 && (*operator == '/' || *operator == '%'))
+	if (num2 == 0 && (*op == '/' || *op == '%'))
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	operation = get_op_func(operator);
+	func = get_op_func(op);
 
-	if (operation == NULL)
+	if (func == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	printf("%d\n", operation(num1, num2));
+	printf("%d\n", func(num1, num2));
 
 	return (0);
 }

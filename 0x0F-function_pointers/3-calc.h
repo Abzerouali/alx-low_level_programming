@@ -11,8 +11,8 @@
 */
 typedef struct op
 {
-	char *operator;
-	int (*operation)(int, int);
+	char *op;
+	int (*func)(int, int);
 } op_t;
 int (*get_op_func(char *s))(int, int);
 int op_add(int a, int b);
