@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	}
 	ptr = (char *)main;
 	index = 0;
-	for (index < num && (void *)(ptr + index) != NULL)
+	while (index < num && (void *)(ptr + index) != NULL)
 	{
 		printf("%02x ", ptr[index] & 0xff);
 		i++;
