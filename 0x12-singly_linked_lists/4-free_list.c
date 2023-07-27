@@ -3,8 +3,7 @@
 /**
 * free_list - function takes a pointer to the head of a list
 * and frees all the nodes in the list.
-* @head: Pointer to the head of the list
-* Return : void
+* @head: Pointer to the head of the list.
 */
 void free_list(list_t *head)
 {
@@ -17,5 +16,4 @@ void free_list(list_t *head)
 		free(node->str);
 		free(node);
 	}
-	return;
 }

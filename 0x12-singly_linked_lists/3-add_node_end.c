@@ -36,9 +36,9 @@ list_t *add_node_end(list_t **head, const char *str)
 }
 
 /**
-* _strlen - a function returns the length of a string
-* @str: string 
-* Return: the length of the string
+* _strlen - a function returns the length of a string.
+* @str: string.
+* Return: the length of the string.
 */
 int _strlen(const char *str)
 {
