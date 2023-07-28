@@ -1,5 +1,5 @@
 #include "lists.h"
-
+int _strlen(const char *str);
 /**
 * add_node_end - a function that adds a new node at the end of a list_t list.
 * @head: pointer to pointer to the head of the list
