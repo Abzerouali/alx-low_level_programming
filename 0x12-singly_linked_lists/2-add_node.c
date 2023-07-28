@@ -1,4 +1,6 @@
 #include "lists.h"
+
+int _strlen(const char *str);
 /**
 * add_node- a function that adds a new node at the beginning of a list_t list.
 * @head: pointer to a pointer to the head of the list.
