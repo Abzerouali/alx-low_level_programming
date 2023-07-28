@@ -7,17 +7,17 @@
 */
 size_t print_list(const list_t *h)
 {
-	char *string;
-	unsigned int lenght;
+	char *str;
+	unsigned int len;
 	int i = 0;
 
 	while (h)
 	{
-		lenght = h->lenght;
-		string = h->string;
-		if (string)
+		len = h->len;
+		str = h->str;
+		if (str)
 		{
-			printf("[%d] %s\n", lenght, string);
+			printf("[%d] %s\n", len, str);
 		}
 		else
 		{
