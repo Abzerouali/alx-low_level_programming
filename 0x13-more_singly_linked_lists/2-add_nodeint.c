@@ -2,7 +2,7 @@
 /**
 * add_nodeint - Adds a new node at the beginning of a listint_t list.
 * @head: Pointer to pointer to the first node.
-* @n: Integer data to be stored in the new node.
+* @n: Int data to be stored in the new node.
 * Return: The address of the new node, or NULL if memory allocation fails.
 */
 listint_t *add_nodeint(listint_t **head, const int n)
