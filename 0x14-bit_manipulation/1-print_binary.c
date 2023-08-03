@@ -7,26 +7,25 @@
 * 3-Print 1 or 0 depending on the bit at the current shift position.
 * @n: The number to be printed in binary.
 */
-void print_binary(unsigned long int number)
+void print_binary(unsigned long int n)
 {
 	unsigned long int current_number;
 	int num_shifts;
 
-	if (number == 0)
+	if (n == 0)
 	{
 		printf("0");
 	}
 
-	current_number = number;
+	current_number = n;
 	num_shifts = 0;
 
-	    
 	while ((current_number >>= 1) > 0)
 		num_shifts++;
 
 	while (num_shifts >= 0)
 	{
-		if ((number >> num_shifts) & 1)
+		if ((n >> num_shifts) & 1)
 			printf("1");
 		else
 			printf("0");
