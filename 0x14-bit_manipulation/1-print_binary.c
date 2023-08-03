@@ -12,11 +12,6 @@ void print_binary(unsigned long int n)
 	unsigned long int current_number;
 	int num_shifts;
 
-	if (n == 0)
-	{
-		printf("0");
-	}
-
 	current_number = n;
 	num_shifts = 0;
 
