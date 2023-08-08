@@ -9,26 +9,28 @@
 *if write fails or does not write the expected amount of bytes, return 0.
 */
 ssize_t read_textfile(const char *filename, size_t letters)
-
-	ssize_t rb, wb, fd;
+{
+	ssize_t fd, rb, wb;
 	char *buffer;
 
 	if (!filename)
-	return (0);
+		return (0);
+
 	buffer = malloc(sizeof(char) * letters);
 	if (!buffer)
-	return (0);
+		return (0);
 
 	fd = open(filename, O_RDONLY);
 	rb = read(fd, buffer, letters);
 	wb = write(STDOUT_FILENO, buffer, rb);
+	if (fd == -1 || rb == -1 || wb == -1 || wb != rb)
+	{
+		free(buffer);
+		return (0);
+	}
 
-	if (fd == -1 || rb == -1 || wb == -1 || rb != wb)
-{
 	free(buffer);
-	return (0);
-}
-free(buffer);
-close(fd);
-return (wb);
+	if (close(fd) == -1)
+		return (0);
+	return (wb);
 }
