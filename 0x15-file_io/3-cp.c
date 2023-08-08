@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 
-		wrt = write(toto, buffer, rd);
+		wrt = write(to, buffer, rd);
 		if (to == -1 || wrt == -1)
 		{
 			dprintf(STDERR_FILENO,
@@ -82,7 +82,7 @@ void close_f(int fd)
 
 	cha = close(fd);
 
-	if (chac == -1)
+	if (cha == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
