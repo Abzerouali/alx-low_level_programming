@@ -1,4 +1,7 @@
 #include "main.h"
+
+char *_buffer(char *f);
+void close_f(int fd);
 /**
 * main - copies the content of a file to another file.
 * @argc: arguments count
