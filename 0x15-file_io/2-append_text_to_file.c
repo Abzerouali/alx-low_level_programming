@@ -29,8 +29,6 @@ wr = write(fds, text_content, lenght);
 if (fds == -1 || wr == -1)
 	return (-1);
 
-	close(fds);
-
-	return (1);
-	}
+close(fds);
+return (1);
 }
