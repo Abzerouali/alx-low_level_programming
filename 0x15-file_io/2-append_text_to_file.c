@@ -12,24 +12,25 @@
 */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fds, wrf;
-	size_t lenght;
+int fds, wr, lenght = 0;
 
-	if (!filename)
-		return (-1);
+if (filename == NULL)
+	return (-1);
 
-	if (!text_content)
-		lenght = 0;
-	else
-		lenght = strlen(text_content);
+if (text_content != NULL)
+{
+	for (lenght = 0; text_content[lenght];)
+		lenght++;
+}
 
-	fds = open(filename, O_RDWR | O_APPEND);
-	if (fds == -1)
-		return (-1);
+fds = open(filename, O_WRONLY | O_APPEND);
+wr = write(fds, text_content, lenght);
 
-	wrf = write(fds, text_content, lenght);
-	if (wrf == 1)
-		return (-1);
+if (fds == -1 || wr == -1)
+	return (-1);
+
 	close(fds);
+
 	return (1);
+	}
 }
