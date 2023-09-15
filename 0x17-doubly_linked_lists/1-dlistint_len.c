@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/*
+/**
 *dlistint_len - Computes the length of a doubly linked list.
 *@h: A pointer to the head of the list.
 *Return: the size of the list
