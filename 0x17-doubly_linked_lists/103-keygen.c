@@ -11,8 +11,7 @@ int main(int argc, char **argv)
 {
 	unsigned int index1, value1;
 	size_t username_length, accumulated_value;
-	char *key_characters = "A-CHRDw87lNS0E9B2Tibgpn "
-				"MVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
+	char *key_characters = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 	char generated_key[7] = "      ";
 
 	if (argc != 2)
